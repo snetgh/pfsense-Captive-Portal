@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<link rel="shortcut icon" href="captiveportal-favicon.ico" />
+<title>Step Network</title>
+<!-- Stylesheets -->
+<link rel="stylesheet" href="captiveportal-style.css" type="text/css" media="all">
+
+<!-- Optimize for mobile devices -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"> 
+</head>
+<body>
+
+<div id="header">
+    <div id="login-intro">
+    	<img src="captiveportal-login-icon.png" alt="snet image"/>
+		<h1>WELCOME TO SNET WI-FI ZONE</h1>
+        <h5>always connecting...</h5>
+    </div> <!-- login-intro -->
+</div>
+
+<div id="login" class="login">
+<form method="post" name="loginform" id="loginform" action="#PORTAL_ACTION#">
+	<p>
+		<label for="user_login">Username<br>
+		<input type="text" name="auth_user" id="user_login" aria-describedby="login_error" class="input" value="" size="20"></label>
+	</p>
+    
+    <p>
+		<label for="user_pass">Password<br>
+		<input type="password" name="auth_pass" id="user_pass" aria-describedby="login_error" class="input" value="" size="20"></label>
+	</p>
+    
+	<input name="redirurl" type="hidden" value="#PORTAL_REDIRURL#">
+	<input name="accept" type="submit" class="button button-primary ic-right-arrow" value="Login">
+	
+</form>
+<br>
+
+<div id="have_account" style="text-align: center;"><font color="black"> Don't have an account? </font><b><a target="_blank" rel="noreferrer" href="http://sdrive.snetgh.net">Click here to sign up</a></b></div>
+                
+                <div id="need_support" class="need_support" style="text-align: center;"><font color="black"> Need Help? Contact Support On <b>0208 554 249</font></b></div>
+                
+                <div id="rights_reserved" class="rights_reserved" style="text-align: center;">
+                  <p><font color="black"> ©2017 All Rights Reserved. Step Network.</font></p>
+                </div>
+</body>
+</html>
